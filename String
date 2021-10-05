@@ -1,0 +1,4 @@
+
+; "apple"
+;(string-append "Ada" " " "Lovelace")
+(substring "Henintsoa" 0 3)
