@@ -1,0 +1,14 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname yell) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; String -> String
+;; produce string with "!" added to the end of String
+(check-expect (yell "Hello") "Hello!")
+(check-expect (yell "Bonjour") "Bonjour!")
+;(define (yell s) " ")
+
+;(define (yell s)
+;  (... s))
+
+(define (yell s)
+  (string-append s "!"))
