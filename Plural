@@ -1,0 +1,16 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname Plural) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; String -> String
+;; produce the given String with s
+
+(check-expect (plural "Word") "Words")
+(check-expect (plural "Girl") "Girls")
+
+;(define (plural s) " ")
+
+;(define (plural s)
+;    (... s))
+
+(define (plural s)
+  (string-append s"s"))
